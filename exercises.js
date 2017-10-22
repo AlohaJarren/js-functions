@@ -326,7 +326,7 @@ console.log(capEm);
 */
 
 function oneCap(str) {
-	return str[0].toUpperCase() + str.slice(1);
+	return str.charAt(0).toUpperCase() + str.slice(1);
 }
 
 // Alternative: return str.charAt(0)
