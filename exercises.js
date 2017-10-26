@@ -46,7 +46,7 @@ var bango2 = 27;
 */
 
 function add(num1, num2) {
-	return num1 + num2;
+  return num1 + num2;
 }
 
 var sum = add(bango1, bango2);
@@ -67,7 +67,7 @@ console.log(sum);
 */ 
 
 function subtract(num1, num2) {
-	return num1 - num2;
+  return num1 - num2;
 }
 
 var difference = subtract(bango1, bango2);
@@ -88,7 +88,7 @@ console.log(difference);
 */
 
 function multiply(num1, num2) {
-	return num1 * num2;
+  return num1 * num2;
 }
 
 var product = multiply(bango1, bango2);
@@ -109,7 +109,7 @@ console.log(product);
 */
 
 function divide(num1, num2) {
-	return num1 / num2;
+  return num1 / num2;
 }
 
 var quotient = divide(bango1, bango2);
@@ -128,7 +128,7 @@ console.log(quotient);
 */
 
 function checkSum(x) {
-	return "Mariah Carey has been married " + x + " amount of times.";
+  return "Mariah Carey has been married " + x + " amount of times.";
 }
 
 /* var x = sum*/
@@ -147,7 +147,7 @@ console.log(checkSum(sum));
 */ 
 
 function checkDifference(x) {
-	return "Last night I dreamt that I ate " + x + " Taco Bell soft tacos.";
+  return "Last night I dreamt that I ate " + x + " Taco Bell soft tacos.";
 }
 // var x = sum //
 console.log(checkDifference(difference));
@@ -164,10 +164,11 @@ console.log(checkDifference(difference));
 */
 
 function checkProduct() {
-	return sum * product;
+  return sum * product;
 }
 
 console.log(checkProduct());
+
 
 /*
  * #9
@@ -181,7 +182,7 @@ console.log(checkProduct());
 */
 
 function checkQuotient() {
-	return product * quotient;
+  return product * quotient;
 }
 
 console.log(checkQuotient());
@@ -211,7 +212,7 @@ var bango4 = 5;
 var bango5 = 12;
 
 function addThenSubtract(num1, num2, num3) {
-	return num1 + num2 - num3;
+  return num3 - (num1 + num2);
 }
 
 var groupOperations1 = addThenSubtract(bango3, bango4, bango5);
@@ -232,7 +233,7 @@ console.log(groupOperations1);
 */ 
 
 function multiplyThenDivide(num1, num2, num3) {
-	return num1 * num2 / num3;
+  return num3 / (num1 * num2);
 }
 
 var groupOperations2 = multiplyThenDivide(bango3, bango4, bango5);
@@ -251,7 +252,7 @@ console.log(groupOperations2);
 */
 
 function createFullName(firstName, lastName) {
-	return firstName + lastName;
+  return firstName + lastName;
 }
 
 var myFullName = createFullName("Jarren ", "Calizo");
@@ -271,7 +272,7 @@ console.log(myFullName);
  */
 
 function eatFood(firstName, lastName, food) {
-	return firstName + lastName + "asks to order" + food + " at McDonalds for a YouTube prank.";
+  return firstName + lastName + "asks to order" + food + " at McDonalds for a YouTube prank.";
 }
 
 var justAFoodPrank = eatFood("Jarren ", "Calizo ", " a Whopper");
@@ -291,7 +292,7 @@ console.log(justAFoodPrank);
 */
 
 function shoeSize(inches) {
-	return inches * 2.54 + " cm";
+  return inches * 2.54 + " cm";
 }
 
 //Essential portion of return-  return inches * 2.54
@@ -310,7 +311,7 @@ console.log(centiInch);
 */
  
 function allCaps(str) {
-	return str.toUpperCase();
+  return str.toUpperCase();
 }
 
 var capEm = allCaps("leBrON jAmES");
@@ -326,7 +327,7 @@ console.log(capEm);
 */
 
 function oneCap(str) {
-	return str.charAt(0).toUpperCase() + str.slice(1);
+  return str.charAt(0).toUpperCase() + str.slice(1);
 }
 
 // Alternative: return str.charAt(0)
@@ -346,12 +347,12 @@ console.log(capOneOfEm);
  */
 
 function verifyDrinkingAge(age) {
-	if (age >= 21) {
-		return true;
-	} 
-	else if (age < 21) {
-		return false;
-	}
+  if (age >= 21) {
+    return true;
+  } 
+  else if (age < 21) {
+    return false;
+  }
 }
 
 var canDrink = verifyDrinkingAge(16);
@@ -364,12 +365,12 @@ console.log(canDrink);
  */
 
 function throwParty() {
-	if (canDrink == true) {
-		return "Cheee Hoo! We going to da party!";
-	}
-	else if (canDrink == false) {
-		return "Meh, see you at Starbucks.";
-	}
+  if (canDrink == true) {
+    return "Cheee Hoo! We going to da party!";
+  }
+  else if (canDrink == false) {
+    return "Meh, see you at Starbucks.";
+  }
 }
 
 var canParty = throwParty(canDrink);
