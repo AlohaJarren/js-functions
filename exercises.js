@@ -317,7 +317,7 @@ function allCaps(str) {
 var capEm = allCaps("leBrON jAmES");
 console.log(capEm);
 
-
+// could have just console.log(allCaps("leBrOn jAmES"))
 /*
  * #16
  * Function oneCap
@@ -334,6 +334,8 @@ function oneCap(str) {
 
 var capOneOfEm = oneCap("rito pls!");
 console.log(capOneOfEm);
+
+// could have just console.log(oneCap("rito pls!"))
 
 /*
  * #17
